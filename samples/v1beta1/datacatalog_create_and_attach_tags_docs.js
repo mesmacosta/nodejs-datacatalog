@@ -13,7 +13,7 @@ async function main() {
   // -------------------------------
   // Set your Google Cloud Platform project ID.
   // -------------------------------
-  const projectId = 'uat-env-1';
+  const projectId = 'PROJECT_ID';
 
   // -------------------------------
   // Currently, Data Catalog stores metadata in the 
@@ -151,13 +151,13 @@ async function main() {
     }
   };
 
-  const attachTagRequest = {
+  request = {
     parent: entry.name,
     tag: tag,
   };
 
   // Create the Tag.
-  await client.createTag(attachTagRequest)
+  await client.createTag(request)
   console.log(`Tag created for entry: ${entry.name}`);
 }
 
