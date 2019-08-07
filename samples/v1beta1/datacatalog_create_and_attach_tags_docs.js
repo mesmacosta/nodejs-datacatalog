@@ -4,7 +4,8 @@ async function main() {
   // -------------------------------
   // Import required modules.
   // -------------------------------
-  const datacatalog = require('@google-cloud/datacatalog').v1beta1;
+  const { DataCatalogClient } = require('@google-cloud/datacatalog').v1beta1;
+  const datacatalog = new DataCatalogClient();
 
   // Common fields.
   let request;

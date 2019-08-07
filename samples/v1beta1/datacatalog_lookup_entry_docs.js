@@ -16,9 +16,9 @@ async function lookup() {
   // Set your Resource Name.
   // -------------------------------
   // TODO(developer): Uncomment the following lines before running the sample.
-  const projectId = 'uat-env-1'
-  const datasetID = 'demo_dataset'
-  const resourceName = `//bigquery.googleapis.com/projects/${projectId}/datasets/${datasetID}`;
+  // const projectId = 'my-project'
+  // const datasetID = 'my_dataset'
+  // const resourceName = `//bigquery.googleapis.com/projects/${projectId}/datasets/${datasetID}`;
 
   const [result] = await datacatalog.lookupEntry({linkedResource: resourceName});
   return result;
